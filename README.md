@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1 align="center">Mazer Dashboard</h1>
 
 ![Mazer Screenshot](https://user-images.githubusercontent.com/45036724/167523601-9d20fb17-1989-488f-b619-cb53c0db8898.png)
@@ -134,3 +135,6 @@ Mazer is created by <a href="https://saugi.me">Saugi</a>.
 ## Sponsors
 
 ![zuramai's sponsors](https://raw.githubusercontent.com/zuramai/static/main/sponsors.svg)
+=======
+# calculadoracarbono
+>>>>>>> e618fa4e330b0dea4d96daaa30f4c6f7fb583c25
