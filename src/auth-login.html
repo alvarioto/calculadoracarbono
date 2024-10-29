@@ -2,47 +2,47 @@
 
 {% extends 'src/layouts/auth.html' %}
 {% block content %}
-<div class="row h-100">
-    <div class="col-lg-5 col-12">
-        <div id="auth-left">
-            <div class="auth-logo">
-                <a href="index.html"><img src="assets/static/images/logo/logo.svg" alt="Logo"></a>
+<div class="row h-100" style="background-image: url('assets/static/images/samples/fondeverde.avif'); background-size: cover; background-position: center;">
+    <div class="col-lg-4 col-10 mx-auto">
+        <!-- Añadimos un margen superior para bajar el recuadro -->
+        <div id="auth-left" class="p-4 mt-5" style="background-color: rgba(255, 255, 255, 0.9); border-radius: 10px;">
+            <!-- Aumentamos aún más el tamaño del logo -->
+            <div class="auth-logo mb-3 text-center">
+                <a href="index.html"><img src="assets/static/images/logo/logo.svg" alt="Logo" style="width: 200px;"></a>
             </div>
-            <h1 class="auth-title">Log in.</h1>
-            <p class="auth-subtitle mb-5">Log in with your data that you entered during registration.</p>
+            <!-- Reducimos el espacio entre "Iniciar sesión" y la siguiente frase -->
+            <h3 class="auth-title text-center" style="font-size: 1.4rem; margin-bottom: 0.5rem;">Iniciar sesión</h3>
+            <p class="auth-subtitle text-center" style="font-size: 0.9rem;">Ingrese sus datos para continuar</p>
 
             <form action="index.html">
-                <div class="form-group position-relative has-icon-left mb-4">
-                    <input type="text" class="form-control form-control-xl" placeholder="Username">
+                <!-- Campos de formulario más pequeños -->
+                <div class="form-group position-relative mb-3">
+                    <input type="text" class="form-control form-control-sm" placeholder="Usuario" style="font-size: 0.8rem;">
                     <div class="form-control-icon">
                         <i class="bi bi-person"></i>
                     </div>
                 </div>
-                <div class="form-group position-relative has-icon-left mb-4">
-                    <input type="password" class="form-control form-control-xl" placeholder="Password">
+                <div class="form-group position-relative mb-3">
+                    <input type="password" class="form-control form-control-sm" placeholder="Contraseña" style="font-size: 0.8rem;">
                     <div class="form-control-icon">
                         <i class="bi bi-shield-lock"></i>
                     </div>
                 </div>
-                <div class="form-check form-check-lg d-flex align-items-end">
-                    <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label text-gray-600" for="flexCheckDefault">
-                        Keep me logged in
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault" style="font-size: 0.75rem;">
+                        Mantener sesión iniciada
                     </label>
                 </div>
-                <button class="btn btn-primary btn-block btn-lg shadow-lg mt-5">Log in</button>
+                <button class="btn btn-primary btn-sm w-100" style="font-size: 0.8rem;">Iniciar sesión</button>
             </form>
-            <div class="text-center mt-5 text-lg fs-4">
-                <p class="text-gray-600">Don't have an account? <a href="auth-register.html" class="font-bold">Sign
-                        up</a>.</p>
-                <p><a class="font-bold" href="auth-forgot-password.html">Forgot password?</a>.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-7 d-none d-lg-block">
-        <div id="auth-right">
 
+            <div class="text-center mt-4" style="font-size: 0.8rem;">
+                <p>¿No tienes una cuenta? <a href="auth-register.html" class="font-bold">Regístrate</a>.</p>
+                <p><a href="auth-forgot-password.html" class="font-bold">¿Olvidaste tu contraseña?</a></p>
+            </div>
         </div>
     </div>
 </div>
 {% endblock %}
+
